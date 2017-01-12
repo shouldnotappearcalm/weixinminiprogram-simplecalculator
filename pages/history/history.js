@@ -1,0 +1,11 @@
+Page({
+    data:{
+        callogs:[]
+    },
+    onLoad:function(){
+        console.log(wx.getStorageSync('callogs'));
+        this.setData({
+            callogs:wx.getStorageSync('callogs')
+        });
+    }
+})

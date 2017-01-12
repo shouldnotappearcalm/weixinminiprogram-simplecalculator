@@ -1,0 +1,6 @@
+<view class="content">
+    <image class="main-bg" src="../asserts/img/timg.jpg"></image>
+    <block wx:for="{{callogs}}" wx:for-item="log" wx:key="*this">
+        <view class="item">{{log}}</view>
+    </block>
+</view>
